@@ -18,8 +18,6 @@ namespace GeneralMachine.Flow.Step.Base
         /// <param name="entiy">机器模组实例</param>
         public FlowStep (StateMachine machine,MachineEntiy entiy)
         {
-            //
-            //合适吗
             this.entiy = entiy;
             this.machine = machine;
         }
