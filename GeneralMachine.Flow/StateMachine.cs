@@ -8,19 +8,21 @@ using System.Threading.Tasks;
 namespace GeneralMachine.Flow
 {
     /// <summary>
-    /// 状态机类
+    /// 5_2.状态机类
     /// </summary>
     public class StateMachine
     {
         /// <summary>
-        /// 状态机构造函数
+        /// 5_2A.状态机构造函数
         /// </summary>
         /// <param name="module"></param>
         public StateMachine(Module module)
         {
             this.Module = module;
         }
-
+        /// <summary>
+        /// 5_2B.模组属性
+        /// </summary>
         public Module Module
         {
             get;
