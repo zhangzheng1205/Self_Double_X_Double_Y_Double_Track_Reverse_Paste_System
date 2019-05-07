@@ -29,6 +29,24 @@ namespace GeneralMachine.Flow.Step.Base
             this.machine = machine;
         }
 
+        public enum State
+        {
+            Idle,//等待
+            Enter,//进板
+            CheckContinue,//检查是否继续
+            CheckTrun,//检查是否需要翻转
+            TrunGoXY,//翻转轴去XY
+            Trun,//旋转轴
+            StartMoveXYR,//开始移动XYR
+            MoveXYR,//移动XYR
+            MoveXYRFinished,//
+            MoveZ,
+            MoveZFinsished,
+            ZMoveSafe,
+            ZMoveSafeFinished,
+            Exit,
+        }
+
 
     }
 }
